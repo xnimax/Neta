@@ -1,11 +1,12 @@
 {
-  "name": "Neta",
+  "name": "neta",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
     "axios": "^0.21.1",
     "colors": "^1.4.0",
+    "eslint": "^7.23.0",
     "html-dom-parser": "^1.0.0"
   }
 }

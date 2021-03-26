@@ -10,8 +10,7 @@ async function getData(url, data) {
       }
     })
     .catch((error) => {
-      alert("Fail to connect");
-      return false;
+      console.log(error.response.data.message);
     });
 }
 module.exports = getData;

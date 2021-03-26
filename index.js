@@ -1,8 +1,9 @@
 const getData = require("./getData");
 const domParser = require("./parser");
 var colors = require("colors");
+const postData = require("./postData");
 const url = "https://join.dev.neta.sh/api/interview-tests/vault-of-sweets";
-
+const mail = "xnimax@gmail.com";
 class Secret {
   tags = [];
   tagAndAmount = {};
@@ -81,4 +82,7 @@ class Secret {
 }
 
 const secret = new Secret(url);
-secret.getSecret();
+const header = {
+  "Candidate-Email": mail,
+};
+postData(url, {}, secret.getSecret(), header);
