@@ -2,7 +2,7 @@
 
 <body>
 <p>
-This project is a task for fining secret key for :"https://join.dev.neta.sh/api/interview-tests/vault-of-sweets"
+This project is a task for finding the secret key for :"https://join.dev.neta.sh/api/interview-tests/vault-of-sweets"
 </p>
 
 <p>
@@ -10,7 +10,7 @@ This project is a task for fining secret key for :"https://join.dev.neta.sh/api/
     "npm install -g yarn"
 </p>
 <p>
-    Please clone and run yarn to install all dependecies and execute <b>node index.js<b>
+    Please clone and run "yarn" to install all dependencies and execute <b>node index.js<b>
 </p>
 </bosy>
 
