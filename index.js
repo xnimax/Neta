@@ -19,10 +19,10 @@ class Secret {
     });
   }
 
-  getTag(element) {
+  getChildrenTag(element) {
     element.children.forEach((el) => {
       el.name && this.tags.push(this.sanitizeString(el.name));
-      if (el.children) this.getTag(el);
+      if (el.children) this.getChildrenTag(el);
     });
   }
 
@@ -67,7 +67,7 @@ class Secret {
       parsed.forEach((element) => {
         element.name && this.tags.push(this.sanitizeString(element.name));
         if (element.children) {
-          this.getTag(element);
+          this.getChildrenTag(element);
         }
       });
       this.makeTagAndAmount(this.sortArray(this.tags));
